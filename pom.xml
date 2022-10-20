@@ -14,7 +14,7 @@
 	<name>apipagamentos</name>
 	<description>Api Pagamentos que disponibiliza as seguintes operações: pagamento, estorno e consulta</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
         <h2.version>1.4.187</h2.version>
         <junit.version>4.12</junit.version>
 		<commons-lang3.version>3.7</commons-lang3.version>
@@ -50,12 +50,6 @@
 			<artifactId>modelmapper</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-		<!--<dependency>
-			<groupId>org.mapstruct</groupId>
-			<artifactId>mapstruct</artifactId>
-			<version>1.3.1.Final</version>
-		</dependency>
-		-->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>

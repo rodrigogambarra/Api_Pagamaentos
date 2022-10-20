@@ -8,6 +8,7 @@ import com.apipagamentos.apipagamentos.repository.PagamentoRepository;
 import com.apipagamentos.apipagamentos.repository.TransacaoRepository;
 import com.apipagamentos.apipagamentos.services.exceptions.ServiceException;
 import lombok.AllArgsConstructor;
+import org.mapstruct.Mapping;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,6 +29,7 @@ public class ServicePagamento {
 
         List<PagamentoResponseDTO> pagamentoResponseDTOS = new ArrayList<>();
         for(Pagamento pag: list_pagamentos){
+
             pagamentoResponseDTOS.add(mapper.map(pag, PagamentoResponseDTO.class));
         }
         return pagamentoResponseDTOS;

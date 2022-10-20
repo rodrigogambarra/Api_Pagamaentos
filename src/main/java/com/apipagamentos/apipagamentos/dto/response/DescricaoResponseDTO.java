@@ -1,9 +1,13 @@
 package com.apipagamentos.apipagamentos.dto.response;
 
 import com.apipagamentos.apipagamentos.enums.Status;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -11,7 +15,9 @@ import lombok.NoArgsConstructor;
 public class DescricaoResponseDTO {
 
     private double valor;
-    private String dataHora;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
+    private LocalDateTime dataHora;
     private String estabelecimento;
     private long nsu;
     private long codigoAutorizacao;

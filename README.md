@@ -6,8 +6,8 @@
 <p align="center">
 <a href="#sobre">Sobre</a> |
 <a href="#funcionalidades">Funcionalidades</a> |
-<a href="#tecnologias">Tecnologias</a> |
-<a href="#serviços-usados">Serviços usados</a> |
+<a href="#tecnologias-utilizadas">Tecnologias utilizadas</a> |
+<a href="#servicos-e-sistemas-usados">Serviços e sistemas usados</a> |
 <a href="#imagens">Imagens</a> |
 <a href="#como-usar">Como usar</a> |
 <a href="#pré-requisitos">Pré-requisitos</a> |

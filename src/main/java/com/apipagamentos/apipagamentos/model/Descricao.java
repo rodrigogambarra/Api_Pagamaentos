@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
+import java.time.LocalDateTime;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,7 +17,7 @@ public class Descricao {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private double valor;
-    private String dataHora;
+    private LocalDateTime dataHora;
     private String estabelecimento;
     private long nsu;
     private long codigoAutorizacao;
