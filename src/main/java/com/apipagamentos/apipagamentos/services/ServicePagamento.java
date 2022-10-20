@@ -8,7 +8,6 @@ import com.apipagamentos.apipagamentos.repository.PagamentoRepository;
 import com.apipagamentos.apipagamentos.repository.TransacaoRepository;
 import com.apipagamentos.apipagamentos.services.exceptions.ServiceException;
 import lombok.AllArgsConstructor;
-import org.mapstruct.Mapping;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,7 +28,6 @@ public class ServicePagamento {
 
         List<PagamentoResponseDTO> pagamentoResponseDTOS = new ArrayList<>();
         for(Pagamento pag: list_pagamentos){
-
             pagamentoResponseDTOS.add(mapper.map(pag, PagamentoResponseDTO.class));
         }
         return pagamentoResponseDTOS;
@@ -70,8 +68,8 @@ public class ServicePagamento {
         }
 
         Pagamento pagamento = mapper.map(pagamentoDTO, Pagamento.class);
-        pagamento.getTransacao().getDescricao().setNsu(new Long(239484882));
-        pagamento.getTransacao().getDescricao().setCodigoAutorizacao(new Long(32332323));
+        pagamento.getTransacao().getDescricao().setNsu(239484882);
+        pagamento.getTransacao().getDescricao().setCodigoAutorizacao(32332323);
         pagamento.getTransacao().getDescricao().setStatus(Status.AUTORIZADO);
 
         pagamentoRepository.save(pagamento);
