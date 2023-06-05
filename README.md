@@ -63,7 +63,7 @@ Exemplo:
             "id":677552,
             "descricao":{
                     "valor":"500.50",
-                    "dataHora":"22/10/2022 13:58:00",
+                    "dataHora":"22/10/2022 13:58",
                     "estabelecimento":"Pet Shop Mundo Cão"
             },
             "formaPagamento":{
@@ -83,7 +83,7 @@ Exemplo:
 Para abrir o sistema, basta o uso de um navegador de sua preferência.
 
 ## Links
-* Repositório GitHub: https://github.com/rodrigogambarra/Api-GerenciamentoPessoas
+* Repositório GitHub: https://github.com/rodrigogambarra/Api_Pagamentos
 * Swagger: http://localhost:8080/swagger-ui.html
 
 ## Autor
