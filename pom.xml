@@ -131,7 +131,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>org.andgomes.App</mainClass>
+							<mainClass>com.apipagamentos.apipagamentos.ApipagamentosApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
