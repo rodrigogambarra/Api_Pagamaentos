@@ -1,13 +1,12 @@
 package com.apipagamentos.apipagamentos.dto;
 
 import com.apipagamentos.apipagamentos.enums.Tipo;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.validation.constraints.NotNull;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class FormaPagamentoDTO {

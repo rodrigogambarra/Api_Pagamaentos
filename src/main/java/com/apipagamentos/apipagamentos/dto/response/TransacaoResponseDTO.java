@@ -3,8 +3,11 @@ package com.apipagamentos.apipagamentos.dto.response;
 import com.apipagamentos.apipagamentos.dto.FormaPagamentoDTO;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class TransacaoResponseDTO {
 
     private int cartao;

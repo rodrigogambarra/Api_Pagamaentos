@@ -2,14 +2,13 @@ package com.apipagamentos.apipagamentos.dto.response;
 
 import com.apipagamentos.apipagamentos.enums.Status;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class DescricaoResponseDTO {
